@@ -3,7 +3,7 @@ export default async function handler(req, res) {
         const data = req.body;
         console.log(req.body)
 
-        res.redirect("fertig.html")
+        res.redirect("/fertig.html")
     } else {
         res.status(405).send('Method Not Allowed');
     }
